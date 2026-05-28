@@ -1,24 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mark Welch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Clarity Consulting</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d0d0d;
+        color: #e6e6e6;
+        padding-bottom: 120px; /* space for sticky footer */
+    }
+
+    header {
+        text-align: center;
+        padding: 30px 0 10px;
+    }
+
+    header img {
+        width: 120px;
+        opacity: 0.9;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #1a1a1a;
+        border-bottom: 1px solid #333;
+    }
+
+    nav button {
+        background: none;
+        border: none;
+        padding: 15px 25px;
+        color: #ccc;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    nav button.active {
+        color: #fff;
+        border-bottom: 2px solid #4da6ff;
+    }
+
+    .tab {
+        display: none;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        line-height: 1.6;
+    }
+
+    h2 {
+        color: #4da6ff;
+        font-weight: 600;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+    }
+</style>
+
+<script>
+function showTab(tabId) {
+    document.querySelectorAll('.tab').forEach(t => t.style.display = 'none');
+    document.getElementById(tabId).style.display = 'block';
+
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-' + tabId).classList.add('active');
+}
+
+window.onload = () => showTab('home');
+</script>
+
 </head>
 <body>
 
-  <h1>Mark Welch</h1>
-  <p>IT & Networking Support</p>
+<header>
+    <img src="mouse.png" alt="PC Mouse Logo">
+</header>
 
-  <h2>What I Do</h2>
-  <ul>
-    <li>PC & laptop support</li>
-    <li>Network setup & troubleshooting</li>
-    <li>Microsoft 365 support</li>
-    <li>Small business IT help</li>
-  </ul>
+<nav>
+    <button id="btn-home" onclick="showTab('home')">Home</button>
+    <button id="btn-ai" onclick="showTab('ai')">AI Clarity</button>
+    <button id="btn-m365" onclick="showTab('m365')">M365 Stability</button>
+    <button id="btn-visuals" onclick="showTab('visuals')">Visual Thinking</button>
+    <button id="btn-about" onclick="showTab('about')">About</button>
+</nav>
 
-  <h2>Contact</h2>
-  <p>Email: yourname@example.com</p>
+<!-- HOME TAB -->
+<div id="home" class="tab">
+    <h2>Clarity. Not Chaos.</h2>
+
+    <p>
+        I help small businesses and solo operators cut through noise, confusion, and tool overload.
+        AI and Microsoft 365 are only useful when they make your thinking clearer — not when they add more mess.
+    </p>
+
+    <p>
+        You bring the problem, the decision, or the “I don’t know where to start.”
+        I bring structure, calm, and straight talk. No jargon. No theatre. No upsell.
+    </p>
+
+    <h3 style="color:#4da6ff; margin-top:30px;">What You Get</h3>
+    <ul>
+        <li>Clear direction instead of mental clutter</li>
+        <li>Practical steps, not long reports</li>
+        <li>AI used properly — to think, not to impress</li>
+        <li>Your Microsoft 365 setup stabilised, not rebuilt</li>
+    </ul>
+
+    <p style="margin-top:25px;">
+        If you want clarity, not another tool or another “solution”, you’re in the right place.
+    </p>
+</div>
+
+<!-- EMPTY TABS FOR NOW -->
+<div id="ai" class="tab"><h2>AI Clarity Sessions</h2></div>
+<div id="m365" class="tab"><h2>Microsoft 365 Stability</h2></div>
+<div id="visuals" class="tab"><h2>Visual Thinking</h2></div>
+<div id="about" class="tab"><h2>About</h2></div>
+
+<!-- FOOTER -->
+<footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0f0f0f;
+    border-top: 1px solid #2a2a2a;
+    box-shadow: 0 -2px 6px rgba(77,166,255,0.15);
+    padding: 15px 10px 12px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    backdrop-filter: blur(4px);
+">
+    <p style="margin: 4px 0 8px 0;">
+        <a href="mailto:info@pcnetworking.co.uk" style="color:#4da6ff; text-decoration:none;">
+            info@pcnetworking.co.uk
+        </a>
+        &nbsp;|&nbsp;
+        <a href="mailto:support@pcnetworking.co.uk" style="color:#4da6ff; text-decoration:none;">
+            support@pcnetworking.co.uk
+        </a>
+    </p>
+
+    <a href="mailto:info@pcnetworking.co.uk?subject=Book%20a%20Session" 
+       style="
+            display:inline-block;
+            padding:7px 16px;
+            background:#4da6ff;
+            color:#000;
+            text-decoration:none;
+            border-radius:4px;
+            font-weight:bold;
+            box-shadow:0 0 4px rgba(77,166,255,0.35);
+       ">
+        Book a Session
+    </a>
+
+    <p style="margin-top:8px; font-size:12px; color:#666;">
+        © PC Networking Ltd
+    </p>
+</footer>
 
 </body>
 </html>
