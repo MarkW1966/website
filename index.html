@@ -1,169 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PC Clarity Consulting</title>
-
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0d0d0d;
-        color: #e6e6e6;
-        padding-bottom: 120px;
-    }
-
-    header {
-        text-align: center;
-        padding: 30px 0 10px;
-    }
-
-    header img {
-        width: 120px;
-        opacity: 0.9;
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        background: #1a1a1a;
-        border-bottom: 1px solid #333;
-    }
-
-    nav button {
-        background: none;
-        border: none;
-        padding: 15px 25px;
-        color: #ccc;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    nav button.active {
-        color: #fff;
-        border-bottom: 2px solid #4da6ff;
-    }
-
-    .tab {
-        display: none;
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 20px;
-        line-height: 1.6;
-    }
-
-    h2 {
-        color: #4da6ff;
-        font-weight: 600;
-    }
-
-    ul {
-        margin-left: 20px;
-    }
+body { background:#0d0d0d; color:#e6e6e6; font-family:Arial; margin:0; padding:20px; }
+a { color:#4da6ff; text-decoration:none; }
+nav a { margin-right:20px; }
 </style>
-
-<script>
-function showTab(tabId) {
-    document.querySelectorAll('.tab').forEach(t => t.style.display = 'none');
-    document.getElementById(tabId).style.display = 'block';
-
-    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-    document.getElementById('btn-' + tabId).classList.add('active');
-}
-
-window.onload = () => showTab('home');
-</script>
-
 </head>
 <body>
 
-<header>
-    <img src="mouse.png" alt="PC Mouse Logo">
-</header>
-
 <nav>
-    <button id="btn-home" onclick="showTab('home')">Home</button>
-    <button id="btn-ai" onclick="showTab('ai')">AI Clarity</button>
-    <button id="btn-m365" onclick="showTab('m365')">M365 Stability</button>
-    <button id="btn-visuals" onclick="showTab('visuals')">Visual Thinking</button>
-    <button id="btn-about" onclick="showTab('about')">About</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="ai.html">AI Clarity</a>
+    <a href="m365.html">M365 Stability</a>
+    <a href="visuals.html">Visual Thinking</a>
 </nav>
 
-<!-- HOME TAB -->
-<div id="home" class="tab">
-    <h2>Clarity. Not Chaos.</h2>
+<h1>Clarity. Not Chaos.</h1>
 
-    <p>
-        I help small businesses and solo operators cut through noise, confusion, and tool overload.
-        AI and Microsoft 365 are only useful when they make your thinking clearer — not when they add more mess.
-    </p>
+<p>I help small businesses and solo operators cut through noise, confusion, and tool overload.</p>
 
-    <p>
-        You bring the problem, the decision, or the “I don’t know where to start.”
-        I bring structure, calm, and straight talk. No jargon. No theatre. No upsell.
-    </p>
+<p>You bring the problem. I bring structure, calm, and straight talk.</p>
 
-    <h3 style="color:#4da6ff; margin-top:30px;">What You Get</h3>
-    <ul>
-        <li>Clear direction instead of mental clutter</li>
-        <li>Practical steps, not long reports</li>
-        <li>AI used properly — to think, not to impress</li>
-        <li>Your Microsoft 365 setup stabilised, not rebuilt</li>
-    </ul>
+</body>
+</html>
 
-    <p style="margin-top:25px;">
-        If you want clarity, not another tool or another “solution”, you’re in the right place.
-    </p>
-</div>
-
-<!-- AI TAB -->
-<div id="ai" class="tab">
-    <h2>AI Clarity Sessions</h2>
-
-    <p>
-        AI isn’t magic and it isn’t a shortcut. Used properly, it’s a thinking tool — a way to get unstuck, test ideas, and see options you couldn’t see on your own.
-    </p>
-
-    <p>
-        My sessions are simple: you bring the mess, I help you make sense of it. We use AI live, in real time, to break things down and get to the point.
-    </p>
-
-    <h3 style="color:#4da6ff; margin-top:30px;">What We Do</h3>
-    <ul>
-        <li>Untangle decisions you’ve been circling for weeks</li>
-        <li>Turn vague ideas into clear, structured options</li>
-        <li>Pressure‑test assumptions and find blind spots</li>
-        <li>Use AI as a co‑pilot, not a crutch</li>
-    </ul>
-
-    <h3 style="color:#4da6ff; margin-top:30px;">How It Works</h3>
-    <ul>
-        <li>Remote, 1:1, straight talk</li>
-        <li>No slides, no frameworks, no corporate theatre</li>
-        <li>We work live — thinking, mapping, refining</li>
-        <li>You leave with clarity and next steps</li>
-    </ul>
-
-    <p style="margin-top:25px;">
-        If you want clarity, not hype, this is where you start.
-    </p>
-</div>
-
-<!-- M365 TAB -->
-<div id="m365" class="tab">
-    <h2>M365 Stability</h2>
-
-    <p>
-        Most small businesses don’t need a rebuild — they need their Microsoft 365 setup to stop fighting them.
-    </p>
-
-    <p>
-        I fix the basics that cause 90% of the pain: permissions, mail flow, Teams structure, shared folders, devices, and the day‑to‑day operational mess.
-    </p>
-
-    <h3 style="color:#4da6ff; margin-top:30px;">What I Sort Out</h3>
-    <ul>
-        <li>Mailboxes, aliases, forwarding, shared mail</li>
-        <li>Teams channels that actually make sense</li>
-        <li>OneDrive/Share
