@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AI Clarity</title>
+<style>
+body { background:#0d0d0d; color:#e6e6e6; font-family:Arial; margin:0; padding:20px; }
+a { color:#4da6ff; text-decoration:none; }
+nav a { margin-right:20px; }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="ai.html">AI Clarity</a>
+    <a href="m365.html">M365 Stability</a>
+    <a href="visuals.html">Visual Thinking</a>
+</nav>
+
+<h1>AI Clarity Sessions</h1>
+
+<p>AI isn’t magic. It’s a thinking tool. Used properly, it helps you get unstuck and see options you couldn’t see alone.</p>
+
+</body>
+</html>
